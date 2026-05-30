@@ -1,0 +1,15 @@
+{
+  "name": "hermes",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Hermes Runtime Harness — core engine for Glyphy Pets and Pixel Office",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
