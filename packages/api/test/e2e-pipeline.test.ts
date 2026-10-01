@@ -7,7 +7,11 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const FRYGAR_PATH = path.resolve(__dirname, '../../../../hermes-harness/tests/fixtures/frygar.rpet');
+const FRYGAR_PATH = [
+  path.resolve(__dirname, 'fixtures/frygar.rpet'),
+  path.resolve(__dirname, '../../../tests/fixtures/frygar.rpet'),
+  path.resolve(__dirname, '../../../../hermes-harness/tests/fixtures/frygar.rpet'),
+].find((p) => fs.existsSync(p)) ?? path.resolve(__dirname, 'fixtures/frygar.rpet');
 
 // ── Integration test: full Hermes pipeline ───────────────────────────────────
 
