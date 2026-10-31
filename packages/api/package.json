@@ -16,7 +16,7 @@
     "@hermes/pets": "workspace:*",
     "cors": "^2.8.5",
     "express": "^5.0.0",
-    "zod": "^3.24.0"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
